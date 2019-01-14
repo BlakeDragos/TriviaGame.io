@@ -40,7 +40,7 @@ var Questions = [
     },
     {
         Question: "What is the name of this creature?", 
-        answers: {a:"Godzilla", b:"Death Salad", c:"Tarasque"}, 
+        answers: {a:"Godzilla", b:"Death Slaad", c:"Tarasque"}, 
         correctAnswer: "Tarasque",
         image: "assets/images/Tarasque.jpeg"
     },

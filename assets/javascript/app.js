@@ -5,6 +5,12 @@ var i = 0, tenQuestions = 10;
 var done = false;
 var timer;
 var backgroundMusic = document.createElement("audio");
+var ding = document.createElement("audio");
+var cheer = document.createElement("audio");
+var boo = document.createElement("audio");
+ding.setAttribute("src", "assets/javascript/ding.mp3");
+cheer.setAttribute("src", "assets/javascript/cheer.mp3");
+boo.setAttribute("src", "assets/javascript/boo.mp3");
 backgroundMusic.setAttribute("src", "assets/javascript/backgroundMusic.mp3");
 
 var Questions = [
@@ -83,6 +89,7 @@ function nextQuestion() {
     time = 30;
     $(".lead").text(time);
     if (userGuess === Questions[i].correctAnswer){
+    cheer.play();
     $("#image-holder").html("<img src='assets/images/correct.gif' width='200px'/>");
     $(".display-4").text("Correct!!");
     $("#AnswersA").text("");
@@ -92,6 +99,7 @@ function nextQuestion() {
     i++;
     setTimeout(loop, 3000);
     }else{
+        boo.play();
         $("#image-holder").html("<img src='assets/images/wrong.gif' width='200px'/>");
         $(".display-4").text("Wrong!");
         $("#AnswersA").text("");
@@ -178,6 +186,7 @@ function loop() {
 $(".Answer").click(function(){
     stop();
     time = 30;
+    ding.play();
     userGuess = $(this).text();
     nextQuestion();
 });

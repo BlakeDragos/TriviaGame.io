@@ -1,0 +1,58 @@
+.fill { 
+    min-height: 100%;
+    height: 100%;
+}
+.jumbotron{
+    text-align: center;
+    background-image: url("../images/Parchment2.jpg");
+    background-size: cover;
+    font-family: fantasy;
+}
+html, body {
+    height: 100%;
+    background-image: url("../images/background.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+  }
+  
+.min-100 {
+      min-height: 100%;
+  }
+
+#AnswersA {
+    background-color: wheat;
+    font-size: 26px;
+    margin-bottom: 5%;
+
+}
+#AnswersB {
+    background-color: wheat;
+    font-size: 26px;
+    margin-bottom: 5%;
+}
+#AnswersC {
+    background-color: wheat;
+    font-size: 26px;
+    margin-bottom: 5%;
+}
+#image-holder {
+    margin: 0 auto;
+    width: 400px;
+    text-align: center;
+}
+#AnswersA:hover {
+    background-color: red;
+    border: 2px solid wheat;
+
+}
+#AnswersB:hover  {
+    background-color: red;
+    border: 2px solid wheat;
+}
+#AnswersC:hover  {
+    background-color: red;
+    border: 2px solid wheat;
+}
+#results {
+    margin-bottom: 5%;
+}

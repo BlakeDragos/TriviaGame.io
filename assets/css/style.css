@@ -57,12 +57,29 @@ html, body {
 #results {
     margin-bottom: 5%;
 }
+img {
+    margin-left: 0;
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+    overflow: hidden;
+}
 @media screen and (max-width:700px){
     .display-4{
         font-size: 20px;
+        max-width: 100%;
+        height: auto;
+        vertical-align: bottom;
+        border: 0;
     }
     .lead{
         font-size: 12px;
     }
-
+    img {
+        margin-left: 0;
+        max-width: 100%;
+        height: auto;
+        vertical-align: bottom;
+        overflow: hidden;
+    }
 }
